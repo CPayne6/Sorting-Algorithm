@@ -89,6 +89,16 @@ public class Utilities {
 		return a;
 	}
 	
+	public static int[] makeRandomArray(int length, int max){
+		int[] a = new int[length];
+		
+		for(int i = 0; i < a.length;i++){
+			a[i] = Math.random() * max;
+		}
+		
+		return a;
+	}
+	
 	public static int[] selectionSort(int[] a){
 		int l = 0;
 		for(int i = 0; i < a.length; i++){
